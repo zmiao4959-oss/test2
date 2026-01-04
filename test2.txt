@@ -1,3 +1,7 @@
 test for merge
+<<<<<<< HEAD
 
 test
+=======
+test 
+>>>>>>> branch1
