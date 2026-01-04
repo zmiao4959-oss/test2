@@ -1,9 +1,1 @@
-test for merge
-<<<<<<< HEAD
-
-test
-=======
-test 
->>>>>>> branch1
-lalala
-lalala
+lalalalala
