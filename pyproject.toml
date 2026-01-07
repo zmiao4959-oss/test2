@@ -1,0 +1,33 @@
+[tool.ruff]
+# 设置行长度为88（与Black默认值相同）
+line-length = 88
+
+[tool.ruff.lint]
+# 启用Pyflakes（F）和部分pycodestyle（E）规则
+select = ["E4", "E7", "E9", "F"]
+#select = ["ALL"]
+# 忽略具体的规则代码，例如忽略行过长检查
+ignore = ["E501"]
+
+[tool.black]
+# 行长度
+line-length = 88
+# 目标Python版本
+target-version = ["py39", "py310"]
+# 包含的文件（默认值，通常无需修改）
+include = '\.pyi?$'
+# 扩展排除目录（在默认基础上追加）
+extend-exclude = '''
+/(
+    \.git
+  | \.mypy_cache
+  | \.venv
+  | build
+  | dist
+  | tests/data  # 可以排除测试数据文件
+)/
+'''
+# 跳过字符串引号规范化（保留原始单/双引号）
+skip-string-normalization = false
+# 是否启用预览样式
+preview = false
